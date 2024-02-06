@@ -1,7 +1,8 @@
 $(document).ready(function() {
+	$('#menu').addClass('fermee0');
 	$('#video').addClass('fermee1');
 	$('#website').addClass('fermee2');
-	$('#custom').addClass('fermee3');
+	$('#dev').addClass('fermee3');
 	$('#sticky').addClass('fermee4');
 });
 
@@ -23,32 +24,50 @@ $('.maxbtn').click(function(){
 	$(this).parent().parent().toggleClass("maximized");
 });
 
+$('.xbtn0').click(function (){
+	 $('#menu').addClass('fermee0');
+});
+
+$('#ouvrirmenu').click(function (){
+	$('#menu').removeClass('fermee0');
+	$(".active").removeClass("active");
+	$(this).addClass("active");
+});
+
 $('.xbtn1').click(function(){
 	$('#video').addClass('fermee1');
 });
 
 $('#ouvrirVideo').click(function(){
 	$('#video').removeClass('fermee1');
+	$(".active").removeClass("active");
+	$(this).addClass("active");
 });
 
 
 $('.xbtn2').click(function(){
 	$('#website').addClass('fermee2');
+
 });
 
 
 $('#ouvrirWebsite').click(function(){
 	$('#website').removeClass('fermee2');
+	$(".active").removeClass("active");
+	$(this).addClass("active");
 });
 
 
 $('.xbtn3').click(function(){
-	$('#custom').addClass('fermee3');
+	$('#dev').addClass('fermee3');
+
 });
 
 
-$('#ouvrirCustom').click(function(){
-	$('#custom').removeClass('fermee3');
+$('#ouvrirdev').click(function(){
+	$('#dev').removeClass('fermee3');
+	$(".active").removeClass("active");
+	$(this).addClass("active");
 });
 
 
@@ -59,5 +78,7 @@ $('.xbtn4').click(function(){
 
 $('#ouvrirSticky').click(function(){
 	$('#sticky').removeClass('fermee4');
+	$(".active").removeClass("active");
+	$(this).addClass("active");
 });
 
