@@ -36,7 +36,10 @@ body{
 	}
 
 .menu{
-	background: #c000d2;
+	background: linear-gradient( 90deg, #b49e11, #000000);
+}
+.dev{
+	background: #7a66fd;
 }
 .red{
 	background: #d23c31;
@@ -63,7 +66,7 @@ body{
 		border-color: #e7e7e7;
 	}
 
-.xbtn1, .xbtn2, .xbtn3, .xbtn4 {
+.xbtn0, .xbtn1, .xbtn2, .xbtn3, .xbtn4 {
 	padding: 2px 4px;
 	text-align: center;
 	border-radius: 2px;
@@ -76,6 +79,9 @@ body{
 	font-size: 16px;
 	margin-top: -3px;
 }
+.xbtn0:hover{
+	color: #b49e11;
+}
 
 .xbtn1:hover{
 		color: #b49e11;
@@ -84,6 +90,7 @@ body{
 .xbtn2:hover{
 	color: #b49e11;
 }
+
 .xbtn3:hover{
 	color: #b49e11;
 }
@@ -128,9 +135,14 @@ body{
 		z-index: 999999;
 	}
 
-#custom{
+#menu{
 	top: 25px;
 	left: 5px;
+}
+
+#dev{
+	top: 45px;
+	left: 20px;
 }
 
 #video{
@@ -148,6 +160,12 @@ body{
 	left: 150px;
 }
 
+#menu .content{
+	width: 200px;
+	height: 200px;
+	color: #d84cfd;
+}
+
 	#video .content{
 		width: 300px;
 		height: 200px;
@@ -157,7 +175,7 @@ body{
 		height: 400px;
 		right: 0;
 	}
-	#custom .content{
+	#dev .content{
 		width: 200px;
 		height: 200px;
 		color: #d84cfd;
@@ -187,9 +205,12 @@ body{
 		transition: width .25s linear, height .25s linear, top .25s linear, left .25s linear;
 	}
 
+.frame.fermee0 {
+	display: none;
+}
+
 .frame.fermee1 {
 	display: none;
-
 }
 .frame.fermee2 {
 	display: none;

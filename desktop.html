@@ -15,21 +15,33 @@
 
 </head>
 <body>
-<button id="ouvrirCustom">MENU</button>
-
+<button id="ouvrirmenu">MENU</button>
 <div id="loading-screen">
 	<img src="assets/logo.png" alt="Chargement en cours...">
 </div>
 
-<div class="frame" id="custom">
+<div class="frame" id="menu">
 	<div class="topbar menu">
+		<div class="maxbtn"><span></span></div>
+		<div class="xbtn0">x</div>
+	</div>
+	<div class="content">
+		<div class="custom-wrapper">
+			<p>MENU</p><br>
+			<button id="ouvrirdev">dev</button>
+		</div>
+	</div>
+</div>
+
+<div class="frame" id="dev">
+	<div class="topbar dev">
 		<div class="maxbtn"><span></span></div>
 		<div class="xbtn3">x</div>
 	</div>
 	<div class="content">
 		<div class="custom-wrapper">
-			<p>MENU</p><br>
-			<button class="raise" id="ouvrirVideo">Vidéo</button>
+			<p>dev</p><br>
+			<button id="ouvrirVideo">Vidéo</button>
 			<button id="ouvrirWebsite">app</button>
 			<button id="ouvrirSticky">Notes</button>
 		</div>
