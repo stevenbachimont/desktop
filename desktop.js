@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$('#terminal').addClass('fermee5');
 	$('#menu').addClass('fermee0');
 	$('#video').addClass('fermee1');
 	$('#website').addClass('fermee2');
@@ -22,6 +23,16 @@ $('.frame').not(".maximized").resizable({
 
 $('.maxbtn').click(function(){
 	$(this).parent().parent().toggleClass("maximized");
+});
+
+$('.xbtn5').click(function (){
+	$('#terminal').addClass('fermee5');
+});
+
+$('#ouvrirterminal').click(function (){
+	$('#terminal').removeClass('fermee5');
+	$(".active").removeClass("active");
+	$(this).addClass("active");
 });
 
 $('.xbtn0').click(function (){
@@ -81,4 +92,6 @@ $('#ouvrirSticky').click(function(){
 	$(".active").removeClass("active");
 	$(this).addClass("active");
 });
+
+
 
